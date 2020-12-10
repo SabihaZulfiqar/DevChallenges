@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox */
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+h1{
+    padding: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'JetBrains Mono', monospace;
+}
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+.content-wrapper{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+    padding: 1rem;
+    height: 80vh;
+    width: 80vw;
+}
+.left{
+    height: auto;
+    width: 50%;
+    padding: 1rem;
+
+}
+.right{
+    height: auto;
+    width: 50%;
+    overflow:hidden;
+    padding: 1rem;
+}
+.right img{
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .left{
+        width: 100vw;
+    }
+    .right{
+        width: 100vw;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .left{
+        padding:8rem;
+    }
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    margin: 1.5rem 0;
+    background-color: black;
+    color: white;
+    font-size: small;
+    width: 50%;
+}
+footer{
+    padding: 2rem;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+}
